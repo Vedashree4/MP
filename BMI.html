@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="html">
+    <head>  <link rel="stylesheet" href="styles.css">
+        <title>BMI calculator</title>
+    </head>
+<body class="body">
+    <header>
+        <div class="Header">
+          <h1 class="logo">Fitness & Health Tracker </h1>
+          <nav>
+            <ul>
+              <li><a href="Home.html">Home</a></li>
+              <li><a href="Login.html">Log Out</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+              <li><a href="Profile.html">Profile</a></li>
+            </ul>
+          </nav>
+        </div>
+     </header>
+    <p style="text-align:center;"><font size="+6"><b>BMI calculator</b></font><p> 
+    <div class="Container">
+        <form name="first" class="BMIform">
+        <p>Enter the details:</p>
+        <input type="text" name="Height" placeholder="Height" >
+        <br>
+        <br>
+        <input type="text" name="Weight" placeholder="Weight">
+        <br>
+        <br>
+        <input type="button" value="Calculate" class="buttons" onClick="BMI()"> 
+        <br>
+        <h3>BMI</h3><input type="text" name="Result"><br><br>
+        <a href="Sample.html" ><input type="button" value="Report" class="buttons"></a>
+        
+    </form>
+    </div>
+    <br><br>
+
+    
+
+    <script type="text/javascript">
+        function BMI(){
+            var h,w,result;
+            h=Number(document.first.Height.value);
+            w=Number(document.first.Weight.value);
+            result=w/h;
+            document.first.Result.value=result;
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+html,body{
+    display: grid; 
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: linear-gradient(to right bottom, #141ddd, #0073ff, #00a5ff, #00cff2, #00f4d8);
+  }
+  
+  .Header {
+      width: 100%;
+      margin: 0 auto;
+  }
+  
+  header {
+    background: whitesmoke;
+    width:100%;
+    text-align: center;
+    position: relative;
+    top: -23px;
+    left: -7px;
+  }
+  .logo {
+    text-align: center;
+    position: relative;
+  }
+  nav {
+    float: center;
+  }
+  nav ul {
+    margin-top: 2%;
+    padding: 0;
+    list-style: none;
+  }
+  nav li {
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+    }
+  nav a {
+    color:Black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  nav a:hover {
+    color: rgb(255, 0, 0);
+  }
+  
+  .Container {
+   max-width: 400px;
+   margin: 0 auto;
+   padding: 30px;
+   background: white;
+   border-radius: 5px;
+   box-shadow: 0px 15px 20px rgba(0,0,0,10);
+  }
+  .buttons{
+    border-radius: 5px;
+    height: 90%;
+    width: 50%;
+    background: -webkit-linear-gradient(left, #01BFFD, #2641C2)
+  }
+  .Heading_calorie{
+    width: 533px;
+    margin: 0 auto;
+    position: relative;
+    top: 156px;
+    font-size: 50px;
+  }
+  
+  .Heading_bodyfat{
+    width: 655px;
+    margin: 0 auto;
+    position: relative;
+    top: 156px;
+    font-size: 50px;
+  }
+  p{
+      text-align: center;
+      font-size: xx-large;
+  }
+  div {
+      margin-bottom: 10px;
+      /* place-items: center; */
+    }
+    label {
+      display: inline-block;
+      width: 203px;
+      text-align: right;
+    }
+     
+    .BMIform {
+        width: 80%;
+        height: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+        border-color: #02c3fd;
+    }
+  
+    .BMRform {
+        width: 80%;
+        height: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+        border-color: #02c3fd;
+      }
+  
+      .IBWform {
+        width: 80%;
+        height: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+        border-color: #02c3fd;
+          }
+  
+          .Proteinform{
+            width: 80%;
+            height: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            border-color: #02c3fd;
+          }
+  
+          .BodyFatform{
+              width: 80%;
+              height: 80%;
+              margin: 0 auto;
+              padding: 20px;
+              text-align: center;
+              border-color: #02c3fd;
+              }
+  
+              .calorieform{
+                width: 80%;
+                height: 80%;
+                margin: 0 auto;
+                padding: 20px;
+                text-align: center;
+                border-color: #02c3fd;
+                  }

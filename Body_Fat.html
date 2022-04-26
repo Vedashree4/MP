@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="html">
+    <head>  <link rel="stylesheet" href="styles.css">
+        <title>Body fat calculator</title>
+    </head>
+<body class="body">
+    <header>
+        <div class="Header">
+          <h1 class="logo">Fitness & Health Tracker </h1>
+          <nav>
+            <ul>
+              <li><a href="Home.html">Home</a></li>
+              <li><a href="Login.html">Log Out</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+              <li><a href="Profile.html">Profile</a></li>
+            </ul>
+          </nav>
+        </div>
+     </header>
+    <p style="text-align:center;"><font size="+6"><b>Body fat calculator</b></font><p> 
+        
+    <div class="Container">
+        <form name="first" class="BodyFatform">
+        <p>Enter the details:</p>
+        <input type="text" name="Waist" placeholder="Waist">
+        <br>
+        <br>
+        <input type="text" name="Weight" placeholder="Weight">
+        <br>
+        <br>
+        <input type="button" value="Calculate" class="buttons" onClick="BMI()"> 
+        <br>
+        
+        <h3>Body fat percentage</h3><input type="text" name="Result"><br><br>
+        <a href="Report.html" ><input type="button" value="Report" class="buttons"></a>
+        
+    </form>
+    </div>
+    <br><br>
+
+
+    <script type="text/javascript">
+        function BMI(){
+            var waist,w,lean_mass,body_fat_weight,result;
+            waist=Number(document.first.Waist.value);
+            w=Number(document.first.Weight.value);
+            lean_mass=(w * 1.082) + 94.42 - waist * 4.15;
+            body_fat_weight=w-lean_mass;
+            result=body_fat_weight/w;
+            document.first.Result.value=result;
+        }
+    </script>
+</body>
+</html>
