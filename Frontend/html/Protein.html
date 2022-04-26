@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="html">
+    <head>  <link rel="stylesheet" href="../CSS/styles.css">
+        <title>Protein intake calculator</title>
+    </head>
+<body class="body">
+    <header>
+        <div class="Header">
+          <h1 class="logo">Fitness & Health Tracker </h1>
+          <nav>
+            <ul>
+              <li><a href="Home.html">Home</a></li>
+              <li><a href="Login.html">Log Out</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+              <li><a href="Profile.html">Profile</a></li>
+            </ul>
+          </nav>
+        </div>
+     </header>
+    <p style="text-align:center;"><font size="+6"><b>Protein intake calculator</b></font><p> 
+    <div class="Container">
+        <form name="first" class="BMRform">
+        <p>Enter the details:</p>
+        <input type="text" name="Weight" placeholder="Weight">
+        <br>
+        <br>
+        <input type="button" value="Calculate" class="buttons" onClick="Protein_intake()"> 
+        <br>
+        <h3>Protein intake</h3><input type="text" name="Result"><br><br>
+        <a href="Report.html" ><input type="button" value="Report" class="buttons"></a>
+        
+    </form>
+    </div>
+    <br><br>
+
+
+    <script type="text/javascript">
+        function Protein_intake(){
+            var w,result;
+            w=Number(document.first.Weight.value);
+            result=((w*2.20462)/20)*7;
+            document.first.Result.value=result;
+
+        }
+    </script>
+</body>
+</html>
