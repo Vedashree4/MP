@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="html">
-    <head>  <link rel="stylesheet" href="../CSS/styles.css">
-        <title>Body fat calculator</title>
+    <head>  <link rel="stylesheet" href="CSS/styles.css">
+        <title>Protein intake calculator</title>
     </head>
 <body class="body">
     <header>
@@ -17,21 +17,16 @@
           </nav>
         </div>
      </header>
-    <p style="text-align:center;"><font size="+6"><b>Body fat calculator</b></font><p> 
-        
+    <p style="text-align:center;"><font size="+6"><b>Protein intake calculator</b></font><p> 
     <div class="Container">
-        <form name="first" class="BodyFatform">
+        <form name="first" class="BMRform">
         <p>Enter the details:</p>
-        <input type="text" name="Waist" placeholder="Waist">
-        <br>
-        <br>
         <input type="text" name="Weight" placeholder="Weight">
         <br>
         <br>
-        <input type="button" value="Calculate" class="buttons" onClick="BMI()"> 
+        <input type="button" value="Calculate" class="buttons" onClick="Protein_intake()"> 
         <br>
-        
-        <h3>Body fat percentage</h3><input type="text" name="Result"><br><br>
+        <h3>Protein intake</h3><input type="text" name="Result"><br><br>
         <a href="Report.html" ><input type="button" value="Report" class="buttons"></a>
         
     </form>
@@ -40,14 +35,12 @@
 
 
     <script type="text/javascript">
-        function BMI(){
-            var waist,w,lean_mass,body_fat_weight,result;
-            waist=Number(document.first.Waist.value);
+        function Protein_intake(){
+            var w,result;
             w=Number(document.first.Weight.value);
-            lean_mass=(w * 1.082) + 94.42 - waist * 4.15;
-            body_fat_weight=w-lean_mass;
-            result=body_fat_weight/w;
+            result=((w*2.20462)/20)*7;
             document.first.Result.value=result;
+
         }
     </script>
 </body>

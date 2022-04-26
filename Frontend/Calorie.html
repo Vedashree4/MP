@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="html">
-    <head>  <link rel="stylesheet" href="../CSS/styles.css">
-        <title>Ideal body weight calculator</title>
+    <head>  <link rel="stylesheet" href="CSS/styles.css">
+        <title>Calorie intake calculator</title>
     </head>
 <body class="body">
     <header>
@@ -17,16 +17,17 @@
           </nav>
         </div>
      </header>
-    <p style="text-align:center;"><font size="+6"><b>Ideal body weight calculator</b></font><p> 
+    <p style="text-align:center;"><font size="+6"><b>Calorie intake calculator</b></font><p> 
+        
     <div class="Container">
-        <form name="first" class="IBWform">
+        <form name="first" class="calorieform">
         <p>Enter the details:</p>
-        <input type="text" name="Height" placeholder="Height (in cm)" >
+        <input type="text" name="Weight" placeholder="Weight">
         <br>
         <br>
-        <input type="button" value="Calculate" class="buttons" onClick="IBW()"> 
+        <input type="button" value="Calculate" class="buttons" onClick="calorie()"> 
         <br>
-        <h3>Ideal body weight</h3><input type="text" name="Result"><br><br>
+        <h3>Calorie intake</h3><input type="text" name="Result"><br><br>
         <a href="Report.html" ><input type="button" value="Report" class="buttons"></a>
         
     </form>
@@ -35,13 +36,11 @@
 
 
     <script type="text/javascript">
-        function IBW(){
-            var h,result;
-            h=Number(document.first.Height.value);
-           
-            result=50 + (0.91 * [h -152.4]);
+        function calorie(){
+            var w;
+            w=Number(document.first.Weight.value);
+            result=w*24;
             document.first.Result.value=result;
-
         }
     </script>
 </body>
