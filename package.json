@@ -1,0 +1,27 @@
+{
+  "name": "loginform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vedashree4/MP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vedashree4/MP/issues"
+  },
+  "homepage": "https://github.com/Vedashree4/MP#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express.js": "^1.0.0",
+    "firebase": "^9.6.11",
+    "knex": "^2.0.0",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.3"
+  }
+}
