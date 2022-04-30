@@ -6,6 +6,17 @@ html,body{
     place-items: center;
     background: linear-gradient(to right bottom, 	#080808, #363535, #5f5e5e, #777676, 	#909090);
   }
+* {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all .2s linear;
+  text-transform: capitalize;
+  outline: none;
+  text-decoration: none;
+}
+/*
 .page-header{
   color: crimson;
   border: none;
@@ -18,6 +29,69 @@ html,body{
   align-content: center;
   position: relative;
 }
+
+ */
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0; left: 0;
+    z-index: 1000;
+    padding:2rem 3rem;
+    background-color: #222;
+
+}
+
+header .logo{
+    font-size: 3rem;
+    color:#fff;
+}
+
+header .logo span{
+    color:var(--orange);
+}
+
+header .navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navbar ul li{
+    margin:0 1rem;
+}
+
+header .navbar ul li a{
+    color: skyblue;
+    font-size: 2rem;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover{
+    color:var(--orange);
+}
+
+header #menu{
+    font-size: 3rem;
+    color:var(--orange);
+    cursor: pointer;
+    display: none;
+}
+
+header.header-active{
+    background:#fff;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+}
+
+header.header-active .logo,
+header.header-active .navbar a{
+    color:#333;
+}
+
 
 .dropbtn {
   background-color: #0073ff;
@@ -285,6 +359,7 @@ html,body{
 }
 
 /*................*/
+/*
 .Header {
 	width: 100%;
 	margin: 0 auto;
@@ -321,4 +396,6 @@ nav a:hover {
   color: rgb(255, 0, 0);
 }
 
+
+ */
 /*................*/
