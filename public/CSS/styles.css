@@ -58,11 +58,12 @@ header{
     z-index: 1000;
     padding:2rem 3rem;
     background-color: #222;
+    position: relative;
 
 }
 
 header .logo{
-    font-size: 3rem;
+    font-size: 2rem;
     color:orange;
 }
 
@@ -107,8 +108,7 @@ header.header-active .logo,
 header.header-active .navbar a{
     color:#333;
 }
-
-  .Container {
+.Container {
    max-width: 400px;
    margin: 0 auto;
    padding: 30px;
